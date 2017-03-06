@@ -1,0 +1,12 @@
+{
+	"auths": {
+		"https://index.docker.io/v1/": {
+			"auth": "ZXRoYW5najpyb21vbmExMjM=",
+			"email": "ethangj@gmail.com"
+		},
+		"quay.io": {
+	   "auth": "ZXRoYW5naitldGhhbmdqOkJINlMzNTBNU1dHWlFCSEgyRExUOVQ2Qk1FNVZXRVNITzROV01RQVlJSjJZRDgzQ0pWQVNXN0lNUFJDUjdZUFk=",
+	   "email": ""
+	  }
+	}
+}

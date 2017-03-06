@@ -1,0 +1,29 @@
+# - type: serial
+#   steps:
+#     - service: casperjs
+#       command: bash -c "sleep 2; casperjs test tests"
+
+- type: parallel
+  steps:
+    - service: jekyll
+      command: printenv
+    # - service: jekyll
+    #   tag: waffle
+    #   type: push
+    #   name: dockerhub_push
+    #   image_name: ethangj/ecrci
+    #   registry: https://index.docker.io/v1/
+    #   encrypted_dockercfg_path: dockercfg.encrypted
+    # - service: jekyll2
+    #   tag: master
+    #   type: push
+    #   name: quay_push
+    #   image_name: quay.io/ethangj/ecrci
+    #   registry: quay.io
+    #   encrypted_dockercfg_path: dockercfg.encrypted
+  # - service: jekyll4
+  #   type: push
+  #   tag: aws
+  #   image_name: 031387331107.dkr.ecr.us-west-2.amazonaws.com/ethangj/ethangj/ecrci
+  #   registry: https://031387331107.dkr.ecr.us-west-2.amazonaws.com/ethangj
+  #   dockercfg_service: aws_dockercfg

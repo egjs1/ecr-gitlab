@@ -1,0 +1,16 @@
+casperjs:
+  build: .
+  links:
+    - jekyll
+
+jekyll:
+  build:
+    image: ethangj/ecrci
+    dockerfile_path: Dockerfile.jekyll
+    cached: true
+
+jekyll2:
+  build:
+    image: quay.io/ethangj/ecrci
+    dockerfile_path: Dockerfile.jekyll
+    cached: true
